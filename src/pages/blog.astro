@@ -1,5 +1,7 @@
 ---
+import Navigation from "/src/components/navigation.astro"
 import "/src/styles/global.css"
+
 const pageTitle = "文章";
 ---
 
@@ -12,9 +14,7 @@ const pageTitle = "文章";
         <title>{pageTitle}</title>
 	</head>
 	<body>
-      <a href="/">首页</a>
-      <a href="/blog/">文章</a>
-      <a href="/about/">关于</a>
+      <Navigation />
 
       <ul>
         <li><a href="/posts/test/">文章 1</a></li>

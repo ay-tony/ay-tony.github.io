@@ -12,4 +12,4 @@ create-pages:
   before_script:
     - npm install
   script:
-    - npm build
+    - npm run build

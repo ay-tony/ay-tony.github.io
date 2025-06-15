@@ -1,12 +1,13 @@
 ---
+import { getCollection } from "astro:content"
 import BaseLayout from "/src/layouts/base-layout.astro"
 
-const mdPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const blogs_typst = await getCollection("typ")
 const pageTitle = "文章";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
     <ul>
-        {mdPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+        {blogs_typst.map((post: any) => <li><a href=`/posts/${post.id}/`>{post.data.title}</a></li>)}
     </ul>
 </BaseLayout>

@@ -13,7 +13,10 @@ export default defineConfig({
         console.debug(`Detecting ${id}`);
         if (id.endsWith('.html.typ') || id.includes('/html/'))
           return "html";
-        return "svg";
+        else if (id.endsWith(".svg.typ") || id.includes("/svg/"))
+          return "svg";
+        else
+          return "html";
       },
     }),
   ],

@@ -3,8 +3,9 @@ import BaseLayout from '/src/layouts/base-layout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
+  <p>{frontmatter.date}</p>
   <p><em>{frontmatter.description}</em></p>
   <p>作者：{frontmatter.author}</p>
+  <p>{frontmatter.tags}</p>
   <slot />
 </BaseLayout>

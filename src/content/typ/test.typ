@@ -1,5 +1,5 @@
 #metadata((
-  title: "Test page 2",
+  title: "Test page",
   author: "Neko",
   desc: [$oo$ fun with `math`],
   date: datetime(

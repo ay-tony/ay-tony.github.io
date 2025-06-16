@@ -13,6 +13,7 @@
 
 html {
     background-color: var(--bg1-color-light);
+    color: var(--fg1-color-light);
     font-family: sans-serif;
 }
 

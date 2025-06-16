@@ -27,6 +27,28 @@
 
 #lorem(10)
 
+test normal
+
+*test strong*
+
+_test emphasis_
+
+`test raw`
+
+https://www.solitairemiya.cn
+
+= Test Heading
+
+- test item
+
++ test item
+
+/ Test: #lorem(50)
+
+'test': "smart quote"
+
+test symbol ~~~ ---
+
 test typst $integral.dash_omega f$ #lorem(10)
 
 `test raw code`
@@ -35,6 +57,7 @@ test typst $integral.dash_omega f$ #lorem(10)
 #include <cstdio>
 
 int main(){
+  int aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa = 1;
 }
 ```
 

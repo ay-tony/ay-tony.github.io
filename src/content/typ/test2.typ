@@ -1,12 +1,16 @@
 #metadata((
   title: "Test page 2",
-  author: "Neko",
-  desc: [$oo$ fun with `math`],
-  date: datetime(
+  description: lorem(10),
+  pub_date: datetime(
     year: 2024,
     month: 8,
     day: 7,
-  ).display(),
+  ),
+  upd_date: datetime(
+    year: 2024,
+    month: 8,
+    day: 7,
+  ),
   tags: ("测试1", "测试2"),
 ))<frontmatter>
 

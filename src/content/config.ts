@@ -4,10 +4,10 @@ const typCollection = defineCollection({
     type: "content",
     schema: z.object({
         title: z.string(),
-        author: z.string().optional(),
-        desc: z.any().optional(),
-        date: z.string(),
+        pub_date: z.any(),
+        upd_date: z.any(),
         tags: z.array(z.string()).optional(),
+        description: z.string().optional(),
     })
 });
 

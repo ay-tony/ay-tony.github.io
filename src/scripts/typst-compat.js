@@ -24,3 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// typst.datatime 显示适配，取消生成的 <p> 段间距
+document.addEventListener("DOMContentLoaded", function () {
+    const groups = document.querySelectorAll("div.post-meta");
+    groups.forEach((group) => {
+        const useElements = group.querySelectorAll("p");
+        useElements.forEach((useEl) => {
+            useEl.style["margin"] = 0;
+        });
+    });
+});

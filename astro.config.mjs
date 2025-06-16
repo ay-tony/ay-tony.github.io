@@ -4,6 +4,11 @@ import { typst } from 'astro-typst';
 
 // https://astro.build/config
 export default defineConfig({
+  vite: {
+    ssr:{
+      external: ["@myriaddreamin/typst-ts-node-compiler"],
+    },
+  },
   integrations: [
     typst({
       options: {

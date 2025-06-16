@@ -1,92 +1,88 @@
+:root {
+    --bg1-color-light: #fcf0e1;
+    --bg2-color-light: #c7a085;
+    --fg1-color-light: #3a1b19;
+    --fg2-color-light: #7b595e;
+    --icon-color-light: #c94737;
+    --bg1-color-dark: #3a1b19;
+    --bg2-color-dark: #7b595e;
+    --fg1-color-dark: #fcf0e1;
+    --fg2-color-dark: #c7a085;
+    --icon-color-dark: #c94737;
+}
+
 html {
-  background-color: #f1f5f9;
-  font-family: sans-serif;
+    background-color: var(--bg1-color-light);
+    font-family: sans-serif;
 }
 
 body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
-  line-height: 1.5;
+    padding: 1rem;
+    max-width: 100ch;
+    line-height: 1.5;
+    margin: 0 auto;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
+    margin: 1rem 0;
+    font-size: 2.5rem;
 }
 
 /* 导航样式 */
 
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
+header {
+    margin-top: 0;
 }
 
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
+nav {
+    display: flex;
 }
 
 .nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
+    margin: 0;
+    margin-left: 0;
+    display: inline-block;
+    position: static;
+    width: auto;
+    background: none;
 }
 
 .nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--fg2-color-light);
+    display: inline-block;
+    padding: 5px 20px;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+    color: var(--icon-color-light);
 }
 
 .expanded {
-  display: unset;
+    display: unset;
 }
 
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
+/* 暗色主题 */
 
 html.dark {
-  background-color: #0d0950;
-  color: #fff;
+    background-color: var(--bg1-color-dark);
+    color: var(--fg1-color-dark);
 }
 
 .dark .nav-links a {
-  color: #fff;
+    color: var(--fg2-color-dark);
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+    color: var(--icon-color-dark);
 }

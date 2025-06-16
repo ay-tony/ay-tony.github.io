@@ -11,11 +11,36 @@
 ))<frontmatter>
 
 #show math.equation: html.frame
+#show math.equation.where(block: true): html.elem.with(
+  "div",
+  attrs: (style: "text-align:center;"),
+)
+#show math.equation.where(block: false): html.elem.with(
+  "span",
+  attrs: (style: "display: inline-block;"),
+)
+#set image(width: 30em)
+#show image: html.frame
+#show image: html.elem.with(
+  "div",
+  attrs: (style: "text-align:center;"),
+)
 
-test typst
+#lorem(10)
 
-$integral.dash_omega f$
+test typst $integral.dash_omega f$ #lorem(10)
+
+`test raw code`
+
+```cpp
+#include <cstdio>
+
+int main(){
+}
+```
 
 123
 
 $ integral.dash_omega f $
+
+#figure(image("img/2025-06-16-08-44-28.png"))

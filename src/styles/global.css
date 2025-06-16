@@ -1,7 +1,9 @@
 /* 颜色主题 */
+/* TODO: 去除硬编码 */
 
 html {
     --bg1-color: #fcf0e1;
+    --bg1-color-transparent: #fcf0e1B0;
     --bg2-color: #c7a085;
     --fg1-color: #3a1b19;
     --fg2-color: #7b595e;
@@ -10,6 +12,7 @@ html {
 
 html.dark {
     --bg1-color: #3a1b19;
+    --bg1-color-transparent: #3a1b19B0;
     --bg2-color: #7b595e;
     --fg1-color: #fcf0e1;
     --fg2-color: #c7a085;
@@ -25,8 +28,9 @@ html {
 }
 
 body {
-    padding: 1rem;
-    max-width: 100ch;
+    background-color: var(--bg1-color-transparent);
+    padding: 1rem 3rem;
+    max-width: 110ch;
     line-height: 1.5;
     margin: 0 auto;
 }

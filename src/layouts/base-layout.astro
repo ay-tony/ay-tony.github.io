@@ -1,6 +1,7 @@
 ---
 import Header from "/src/components/header.astro";
 import Footer from "/src/components/footer.astro";
+import BackgroundContainer from "/src/components/background-container.astro";
 import "/src/styles/global.css";
 
 const { pageTitle } = Astro.props;
@@ -15,6 +16,8 @@ const { pageTitle } = Astro.props;
         <title>{pageTitle}</title>
     </head>
     <body>
+        <BackgroundContainer />
+
         <Header />
 
         <slot />

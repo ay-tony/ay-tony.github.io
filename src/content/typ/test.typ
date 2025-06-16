@@ -42,8 +42,5 @@ int main(){
 123
 
 $ integral.dash_omega f $
-<<<<<<< HEAD
-=======
 
 #figure(image("img/2025-06-16-08-44-28.png"))
->>>>>>> dev

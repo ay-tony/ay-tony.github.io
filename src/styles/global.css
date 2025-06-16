@@ -16,7 +16,7 @@ html.dark {
     --icon-color: #c94737;
 }
 
-/* 主体 */
+/* 页面 */
 
 html {
     background-color: var(--bg1-color);
@@ -34,6 +34,8 @@ body {
 * {
     box-sizing: border-box;
 }
+
+/* 页面元素 */
 
 h1 {
     margin: 1rem 0;

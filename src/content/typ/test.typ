@@ -49,6 +49,10 @@ https://www.solitairemiya.cn
 
 test symbol ~~~ ---
 
+#quote[
+  测试 引用
+]
+
 test typst $integral.dash_omega f$ #lorem(10)
 
 `test raw code`
@@ -57,7 +61,7 @@ test typst $integral.dash_omega f$ #lorem(10)
 #include <cstdio>
 
 int main(){
-  int aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa = 1;
+  int aaaaa = 1;
 }
 ```
 

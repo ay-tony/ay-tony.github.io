@@ -17,13 +17,12 @@
 )
 #show math.equation.where(block: false): html.elem.with(
   "span",
-  attrs: (style: "display: inline-block;"),
+  attrs: (style: "display:inline-block;"),
 )
-#set image(width: 30em)
 #show image: html.frame
 #show image: html.elem.with(
   "div",
-  attrs: (style: "text-align:center;"),
+  attrs: (style: "display:flex; justify-content:center;"),
 )
 
 #lorem(10)
@@ -43,4 +42,6 @@ int main(){
 
 $ integral.dash_omega f $
 
-#figure(image("img/2025-06-16-08-44-28.png"))
+#figure(image("img/2025-06-16-08-44-28.png"), caption: [测试标题])<fig:test>
+
+@fig:test

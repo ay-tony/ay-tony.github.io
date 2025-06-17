@@ -9,8 +9,8 @@
   [
     #metadata((
       title: title,
-      pub_date: datetime(year: pub_date.at(0), month: pub_date.at(1), day: pub_date.at(2)),
-      upd_date: datetime(year: upd_date.at(0), month: upd_date.at(1), day: upd_date.at(2)),
+      pub_date: datetime(year: pub_date.at(0), month: pub_date.at(1), day: pub_date.at(2)).display(),
+      upd_date: datetime(year: upd_date.at(0), month: upd_date.at(1), day: upd_date.at(2)).display(),
       description: description,
       tags: tags,
     ))<frontmatter>

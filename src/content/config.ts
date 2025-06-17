@@ -4,8 +4,8 @@ const typCollection = defineCollection({
     type: "content",
     schema: z.object({
         title: z.string(),
-        pub_date: z.any(),
-        upd_date: z.any(),
+        pub_date: z.string(),
+        upd_date: z.string(),
         tags: z.array(z.string()).optional(),
         description: z.string().optional(),
     })

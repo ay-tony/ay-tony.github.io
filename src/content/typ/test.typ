@@ -5,12 +5,12 @@
     year: 2024,
     month: 8,
     day: 7,
-  ),
+  ).display(),
   upd_date: datetime(
     year: 2024,
     month: 8,
     day: 7,
-  ),
+  ).display(),
   tags: ("测试1", "测试2"),
 ))<frontmatter>
 

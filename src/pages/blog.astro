@@ -1,13 +1,12 @@
 ---
 import { getCollection } from "astro:content"
 import BaseLayout from "/src/layouts/base-layout.astro"
+import PostPreview from "/src/components/post-preview.astro"
 
 const blogs_typst = await getCollection("typ")
 const pageTitle = "文章";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <ul>
-        {blogs_typst.map((post: any) => <li><a href=`/posts/${post.id}/`>{post.data.title}</a></li>)}
-    </ul>
+    {blogs_typst.map((post: any) => <PostPreview post={post} url=`/posts/${post.id}/`/>)}
 </BaseLayout>

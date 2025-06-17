@@ -82,7 +82,6 @@ body {
     src: url("/CascadiaCodeNF.ttf");
 }
 
-.post-conent pre,
 .post-content code {
     font-size: 0.9rem;
     font-family: "CascadiaCodeNF", monospace;
@@ -92,4 +91,6 @@ body {
     background-color: color-mix(in srgb, var(--bg2-color), var(--bg1-color));
     padding: 15px;
     border-radius: 10px;
+    font-family: "CascadiaCodeNF", monospace;
+    font-size: 0.9rem;
 }

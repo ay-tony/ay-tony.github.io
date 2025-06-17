@@ -67,3 +67,8 @@ dd {
     grid-column: 2;
     margin: 0;
 }
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+}

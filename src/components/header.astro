@@ -1,12 +1,14 @@
 ---
+import { Image } from "astro:assets";
 import Navigation from "/src/components/navigation.astro";
 import ThemeIcon from "/src/components/theme-icon.astro";
 import GithubIcon from "/src/components/github-icon.astro";
+import Icon from "./imgs/icon.png";
 ---
 
 <header>
     <nav>
-        <a href="/"><div><img src="/icon.png" alt="临江仙" /></div></a>
+        <a href="/"><div><Image src={Icon} alt="临江仙" id="icon" /></div></a>
         <Navigation />
         <GithubIcon />
         <ThemeIcon />
@@ -32,8 +34,9 @@ import GithubIcon from "/src/components/github-icon.astro";
         align-items: center;
     }
 
-    img {
+    #icon {
         height: 50px;
+        width: 50px;
         border-radius: 10px;
         border: 2px solid var(--fg2-color);
     }

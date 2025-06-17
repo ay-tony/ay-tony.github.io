@@ -14,6 +14,7 @@
   tags: ("测试1", "测试2"),
 ))<frontmatter>
 
+#set text(14pt)
 #show math.equation: html.frame
 #show math.equation.where(block: true): html.elem.with(
   "div",

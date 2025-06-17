@@ -47,7 +47,11 @@ https://www.solitairemiya.cn
 
 + test item
 
+#lorem(100)
+
 / Test: #lorem(50)
+/ Test2: #lorem(50)
+/ Test111: #lorem(50)
 
 'test': "smart quote"
 

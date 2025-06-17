@@ -41,3 +41,29 @@ body {
 }
 
 /* 页面元素 */
+
+a {
+    color: var(--fg2-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--icon-color);
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+}
+
+dt {
+    grid-column: 1;
+    font-weight: bold;
+}
+
+dd {
+    grid-column: 2;
+    margin: 0;
+}

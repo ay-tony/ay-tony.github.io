@@ -5,6 +5,7 @@ import ThemeIcon from "/src/components/theme-icon.astro";
 
 <header>
     <nav>
+        <a href="/"><div><img src="/icon.png" alt="临江仙" /></div></a>
         <Navigation />
         <ThemeIcon />
     </nav>
@@ -18,5 +19,20 @@ import ThemeIcon from "/src/components/theme-icon.astro";
 
     nav {
         display: flex;
+    }
+
+    a {
+        margin: auto 20px;
+    }
+
+    a > div {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        height: 50px;
+        border-radius: 10px;
+        border: 2px solid var(--fg2-color);
     }
 </style>

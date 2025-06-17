@@ -30,6 +30,12 @@
   attrs: (style: "display:flex; justify-content:center;"),
 )
 
+```rust
+pub fn main() {
+    println!("Hello, world!");
+}
+```
+
 #lorem(10)
 
 test normal

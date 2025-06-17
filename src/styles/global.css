@@ -76,3 +76,20 @@ figcaption {
 body>div>p {
     text-indent: 2rem;
 }
+
+@font-face {
+    font-family: "CascadiaCodeNF";
+    src: url("/CascadiaCodeNF.ttf");
+}
+
+pre,
+code {
+    font-size: 0.9rem;
+    font-family: "CascadiaCodeNF", monospace;
+}
+
+pre {
+    background-color: color-mix(in srgb, var(--bg2-color), var(--bg1-color));
+    padding: 15px;
+    border-radius: 10px;
+}

@@ -1,33 +1,9 @@
-#metadata((
-  title: "Test page",
-  description: lorem(10),
-  pub_date: datetime(
-    year: 2024,
-    month: 8,
-    day: 7,
-  ).display(),
-  upd_date: datetime(
-    year: 2024,
-    month: 8,
-    day: 7,
-  ).display(),
-  tags: ("测试1", "测试2"),
-))<frontmatter>
+#import "../templates/post.typ": *
 
-#set text(size: 14pt, lang: "zh", region: "CN")
-#show math.equation: html.frame
-#show math.equation.where(block: true): html.elem.with(
-  "div",
-  attrs: (style: "text-align:center;"),
-)
-#show math.equation.where(block: false): html.elem.with(
-  "span",
-  attrs: (style: "display:inline-block;text-indent:0;"),
-)
-#show image: html.frame
-#show image: html.elem.with(
-  "div",
-  attrs: (style: "display:flex; justify-content:center;"),
+#show: post.with(
+  title: "对于 Typst 模板的测试",
+  pub_date: (2025, 6, 17),
+  upd_date: (2025, 6, 17),
 )
 
 ```rust

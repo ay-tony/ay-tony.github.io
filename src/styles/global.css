@@ -42,38 +42,38 @@ body {
 
 /* 页面元素 */
 
-a {
+.post-content a {
     color: var(--fg2-color);
     text-decoration: none;
 }
 
-a:hover,
-a:focus {
+.post-content a:hover,
+.post-content a:focus {
     color: var(--icon-color);
 }
 
-dl {
+.post-content dl {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.5rem 1rem;
 }
 
-dt {
+.post-content dt {
     grid-column: 1;
     font-weight: bold;
 }
 
-dd {
+.post-content dd {
     grid-column: 2;
     margin: 0;
 }
 
-figcaption {
+.post-content figcaption {
     text-align: center;
     margin-top: 0.5rem;
 }
 
-body>div>p {
+.post-content>p {
     text-indent: 2rem;
 }
 
@@ -82,13 +82,13 @@ body>div>p {
     src: url("/CascadiaCodeNF.ttf");
 }
 
-pre,
-code {
+.post-conent pre,
+.post-content code {
     font-size: 0.9rem;
     font-family: "CascadiaCodeNF", monospace;
 }
 
-pre {
+.post-content pre {
     background-color: color-mix(in srgb, var(--bg2-color), var(--bg1-color));
     padding: 15px;
     border-radius: 10px;

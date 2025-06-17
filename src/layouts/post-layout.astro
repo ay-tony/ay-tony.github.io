@@ -69,5 +69,7 @@ const { frontmatter } = Astro.props;
         }
     </style>
 
-    <slot />
+    <div class="post-content">
+        <slot />
+    </div>
 </BaseLayout>

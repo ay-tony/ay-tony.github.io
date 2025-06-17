@@ -29,7 +29,7 @@
   show image: html.frame
   show image: html.elem.with(
     "div",
-    attrs: (style: "display:flex; justify-content:center;"),
+    attrs: (style: "display:flex; justify-content:center; border-radius:10px; overflow:hidden;"),
   )
 
   it

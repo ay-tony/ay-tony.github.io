@@ -22,7 +22,7 @@
 )
 #show math.equation.where(block: false): html.elem.with(
   "span",
-  attrs: (style: "display:inline-block;"),
+  attrs: (style: "display:inline-block;text-indent:0;"),
 )
 #show image: html.frame
 #show image: html.elem.with(
@@ -63,6 +63,8 @@ test symbol ~~~ ---
 ]
 
 test typst $integral.dash_omega f$ #lorem(10)
+
+$integral.dash_omega f$ #lorem(10)
 
 `test raw code`
 

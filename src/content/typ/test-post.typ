@@ -1,9 +1,9 @@
 #import "../templates/post.typ": *
 
 #show: post.with(
-  title: "对于 Typst 模板的测试",
+  title: "测试文章",
   pub_date: (2025, 6, 17),
-  upd_date: (2025, 6, 17),
+  upd_date: (2025, 6, 18),
 )
 
 ```rust
@@ -65,3 +65,19 @@ $ integral.dash_omega f $
 #figure(image("img/2025-06-16-08-44-28.png"), caption: [测试标题])<fig:test>
 
 @fig:test
+
+#text(features: ("ss01",), box($cal(A)$))
+
+#scr("A")
+
+$
+  cC sA sB sF sG I circ Ob pm scr("A") cal("A") scr("l") "ACDDD" #text(features: ("ss01",), $cal(A)$) B B
+$
+
+#ex[
+  测试12345
+]
+
+#pf[
+  证明12345
+]

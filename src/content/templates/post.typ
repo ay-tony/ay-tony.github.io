@@ -1,3 +1,56 @@
+#import "@preview/physica:0.9.4": *
+
+#let ex(it) = html.elem("div", attrs: (style: "margin: 1rem 0;"))[
+  #html.elem("p", attrs: (style: "text-indent: 0;"))[*练习*]
+  #par(it)
+]
+#let pf(it) = html.elem("div", attrs: (style: "margin: 1rem 0;"))[
+  #html.elem("p", attrs: (style: "text-indent: 0;"))[*证明*]
+  #par(emph(it))
+]
+
+#let scr(it) = text(features: ("ss01",), $cal(it)$)
+#let cate(it) = $upright(sans(#it))$
+#let sA = $scr("A")$
+#let sB = $scr("B")$
+#let sF = $scr("F")$
+#let sG = $scr("G")$
+#let sH = $scr("H")$
+#let sN = $scr("N")$
+#let sR = $scr("R")$
+#let sS = $scr("S")$
+#let sL = $scr("L")$
+#let sl = $scr("l")$
+#let vI = $vb(I)$
+#let vx = $vb(x)$
+#let vy = $vb(y)$
+#let vz = $vb(z)$
+#let uE = $upright(E)$
+#let uM = $upright(M)$
+#let cC = $cate(C)$
+#let cL = $cate(L)$
+#let LHS = math.class("normal", "LHS")
+#let RHS = math.class("normal", "RHS")
+#let var = math.class("unary", "var")
+#let Ob = math.class("unary", "Ob")
+#let Mor = math.class("unary", "Mor")
+#let Hom = math.class("unary", "Hom")
+#let Aut = math.class("unary", "Aut")
+#let End = math.class("unary", "End")
+#let circ = math.class("binary", sym.circle.tiny)
+#let pm = sym.plus.minus
+
+#let cases(..args) = math.cases(..args.pos().map(math.display), ..args.named())
+
+#let math-abbr(body) = {
+  show sym.lt.eq: sym.lt.eq.slant
+  show sym.gt.eq: sym.gt.eq.slant
+  show sym.dots: sym.dots.c
+
+
+  body
+}
+
 #let post(
   title: "无标题文章",
   pub_date: (2000, 1, 1),
@@ -15,6 +68,8 @@
       tags: tags,
     ))<frontmatter>
   ]
+
+  show: math-abbr
 
   set text(size: 14pt, lang: "zh", region: "CN")
   show math.equation: html.frame

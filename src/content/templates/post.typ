@@ -57,6 +57,7 @@
   upd_date: (2000, 1, 1),
   description: "",
   tags: ("杂项",),
+  pub_date_key: 0,
   it,
 ) = {
   [
@@ -65,6 +66,10 @@
       pub_date: datetime(year: pub_date.at(0), month: pub_date.at(1), day: pub_date.at(2)).display(),
       upd_date: datetime(year: upd_date.at(0), month: upd_date.at(1), day: upd_date.at(2)).display(),
       description: description,
+      pub_date_key: (
+        datetime(year: pub_date.at(0), month: pub_date.at(1), day: pub_date.at(2))
+          - datetime(year: 2000, month: 1, day: 1)
+      ).days(),
       tags: tags,
     ))<frontmatter>
   ]

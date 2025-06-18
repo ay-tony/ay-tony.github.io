@@ -2,8 +2,8 @@
 
 #show: post.with(
   title: "概率论 1.1. 测度空间",
-  pub_date: (2025, 6, 18),
-  upd_date: (2025, 6, 18),
+  pub_date: (2025, 6, 19),
+  upd_date: (2025, 6, 19),
   tags: ("概率论",),
   description: "",
 )

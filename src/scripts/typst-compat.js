@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
             useEl.setAttribute("fill", "currentColor");
         });
     });
+    const groups2 = document.querySelectorAll("svg path.typst-shape");
+    groups2.forEach((group) => {
+        group.setAttribute("stroke", "currentColor");
+    });
 });
 
 // typst.html.frame 适配

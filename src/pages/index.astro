@@ -1,9 +1,18 @@
 ---
 import BaseLayout from "/src/layouts/base-layout.astro";
+
 const pageTitle = "首页";
+const today = new Date();
+const buildDate =
+    today.getFullYear() +
+    "年" +
+    (today.getMonth() + 1) +
+    "月" +
+    today.getDate() +
+    "日";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <h1>测试：Astro</h1>
-    aaa1234
+    <h1>临江仙</h1>
+    <p>更新日期：{buildDate}</p>
 </BaseLayout>

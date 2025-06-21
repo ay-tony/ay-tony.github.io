@@ -6,7 +6,7 @@ const typCollection = defineCollection({
         title: z.string(),
         pub_date: z.string(),
         upd_date: z.string(),
-        pub_date_key: z.number(),
+        pub_time_key: z.number(),
         tags: z.array(z.string()).optional(),
         description: z.string().optional(),
     })

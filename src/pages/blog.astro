@@ -3,8 +3,7 @@ import { getCollection } from "astro:content"
 import BaseLayout from "/src/layouts/base-layout.astro"
 import PostPreview from "/src/components/post-preview.astro"
 
-// const blogs_typst = (await getCollection("typ")).sort((a, b) => b.data.pub_date_key - a.data.pub_date_key);
-const blogs_typst = (await getCollection("typ")).reverse();
+const blogs_typst = (await getCollection("typ")).sort((a, b) => b.data.pub_time_key - a.data.pub_time_key);
 const pageTitle = "文章";
 ---
 

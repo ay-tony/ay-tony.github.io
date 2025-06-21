@@ -4,6 +4,7 @@
   title: "概率论 1.3. 随机变量",
   pub_date: (2025, 6, 21),
   upd_date: (2025, 6, 21),
+  pub_time: (9, 41, 22),
   tags: ("概率论",),
   description: "",
 )

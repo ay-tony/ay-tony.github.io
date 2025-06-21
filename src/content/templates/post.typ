@@ -1,10 +1,15 @@
 #import "@preview/physica:0.9.4": *
 
-#let ex(it) = html.elem("div", attrs: (style: "margin: 1rem 0;"))[
-  #html.elem("p", attrs: (style: "text-indent: 0;"))[*练习*]
+#let ex(it) = html.elem(
+  "div",
+  attrs: (
+    style: "margin: 1rem 0; background-color: color-mix(in srgb, var(--bg1-color), var(--bg2-color)); padding: 10px 20px; border-radius: 10px",
+  ),
+)[
+  #html.elem("p", attrs: (style: "text-indent: 0; margin-top: 0;"))[*练习*]
   #par(it)
 ]
-#let pf(it) = html.elem("div", attrs: (style: "margin: 1rem 0;"))[
+#let pf(it) = html.elem("div", attrs: (style: "margin: 1rem 0; margin-top: 0;"))[
   #html.elem("p", attrs: (style: "text-indent: 0;"))[*证明*]
   #par(emph(it))
 ]

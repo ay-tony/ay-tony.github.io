@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "addpost": "sh ./add-post.sh",
+    "deploy": "git checkout main && git push && git checkout dev"
   },
   "dependencies": {
     "@myriaddreamin/typst-ts-node-compiler": "0.6.1-rc1",

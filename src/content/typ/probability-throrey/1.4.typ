@@ -10,8 +10,7 @@
 )
 
 #ex()[
-  Show that if $f gt.eq 0$ and $integral f thin d mu = 0$ then $f = 0$
-  a.e.
+  Show that if $f gt.eq 0$ and $integral f thin d mu = 0$ then $f = 0$ a.e..
 ]
 #pf[
   设 $A = {f > 0} = union.big_n {f > 1 \/ n}$。若 $mu(A) > 0$，那么由测度的连续性知道，存在足够大的 $n_0 in NN^*$ 使得 $mu({f > 1\/n}) > 0$。那么 $ integral f dd(mu)

@@ -8,7 +8,6 @@
   description: "",
 )
 
-
 #ex[
   Let $Omega = bb(R)$, $sF =$ all subsets so that $A$ or $A^c$ is countable, $P(A) = 0$ in the first case and $= 1$ in the second. show that $(Omega , sF , P)$ is a probability space.
 ]

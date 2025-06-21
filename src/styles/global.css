@@ -41,6 +41,9 @@ body {
 }
 
 /* 页面元素 */
+.post-content {
+    line-height: 2;
+}
 
 .post-content a {
     color: var(--fg2-color);

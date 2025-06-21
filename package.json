@@ -10,9 +10,11 @@
     "addpost": "sh ./add-post.sh"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
     "@myriaddreamin/typst-ts-node-compiler": "0.6.1-rc1",
     "astro": "^5.9.3",
     "astro-typst": "^0.9.2",
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.2",
+    "typescript": "^5.8.3"
   }
 }

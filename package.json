@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "addpost": "sh ./add-post.sh",
-    "deploy-website": "git checkout main && git push && git checkout dev && git push"
+    "deploy-website": "git checkout main && git merge dev && git push && git checkout dev && git push"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

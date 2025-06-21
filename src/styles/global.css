@@ -76,9 +76,9 @@ body {
     margin-top: 0.5rem;
 }
 
-.post-content p {
-    text-indent: 2rem;
-}
+/* .post-content p { */
+/*     text-indent: 2rem; */
+/* } */
 
 @font-face {
     font-family: "CascadiaCodeNF";

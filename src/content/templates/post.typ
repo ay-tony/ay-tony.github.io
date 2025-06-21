@@ -13,6 +13,7 @@
 #let cate(it) = $upright(sans(#it))$
 #let sA = $scr("A")$
 #let sB = $scr("B")$
+#let sC = $scr("C")$
 #let sF = $scr("F")$
 #let sG = $scr("G")$
 #let sH = $scr("H")$

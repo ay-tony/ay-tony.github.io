@@ -3,13 +3,14 @@
 #show: post.with(
   title: "概率论 1.1. 测度空间",
   pub_date: (2025, 6, 19),
-  upd_date: (2025, 6, 19),
+  upd_date: (2025, 6, 21),
   tags: ("概率论",),
   description: "",
 )
 
+
 #ex[
-  Let $Omega = bb(R)$, $scr(F) =$ all subsets so that $A$ or $A^c$ is countable, $P(A) = 0$ in the first case and $= 1$ in the second. show that $(Omega , scr(F) , P)$ is a probability space.
+  Let $Omega = bb(R)$, $sF =$ all subsets so that $A$ or $A^c$ is countable, $P(A) = 0$ in the first case and $= 1$ in the second. show that $(Omega , sF , P)$ is a probability space.
 ]
 #pf[
   只要证明 $sF$ 是 $Omega$ 上的 $sigma$-域且 $P$ 是 $sF$ 上的测度。
@@ -20,7 +21,7 @@
 ]
 
 #ex[
-  Rescrl the definition of $scr(S)_d$ from example 1.1.5. show that $sigma (scr(S)_d) = scr(R)^d$, the borel subsets of $bb(R)^d$.
+  Rescrl the definition of $sS_d$ from example 1.1.5. show that $sigma (sS_d) = sR^d$, the borel subsets of $bb(R)^d$.
 ]
 #pf[
   对于 $sR^d$ 的一组拓扑基 $ {(x_1, y_1)times (x_2, y_2) ... times (x_d, y_d): x_i, y_i in RR} $ 中的一个开集 $ (x_1, y_2) times ... times (x_d, y_d), $ 有 $ (x_1, y_2) times ... times (x_d, y_d)
@@ -29,15 +30,15 @@
 ]
 
 #ex[
-  A $sigma$-field $scr(F)$ is said to be countably generated if there is a countable collection $scr(C) subset scr(F)$ so that $sigma (scr(C)) = scr(F)$. Show that $scr(R)^d$ is countably generated.
+  A $sigma$-field $sF$ is said to be countably generated if there is a countable collection $sC subset sF$ so that $sigma (sC) = sF$. Show that $sR^d$ is countably generated.
 ]
 #pf[
-  只要证明 $scr(R)^d$ 可以由 ${(a, b] : a, b in QQ}$ 生成，那么只要证明 ${(a, b]: a, b in RR}$ 可以被它生成，而对于 $forall (a, b]$ 为实数区间，一定存在单调下降的有理数列 $b_n arrow.b b$，从而 $ (a, b] = inter.big_n (a_n, b_n]. $ 那么 $(a, b]$ 可以被生成。
+  只要证明 $sR^d$ 可以由 ${(a, b] : a, b in QQ}$ 生成，那么只要证明 ${(a, b]: a, b in RR}$ 可以被它生成，而对于 $forall (a, b]$ 为实数区间，一定存在单调下降的有理数列 $b_n arrow.b b$，从而 $ (a, b] = inter.big_n (a_n, b_n]. $ 那么 $(a, b]$ 可以被生成。
 ]
 
 #ex[
-  + Show that if $scr(F)_1 subset scr(F)_2 subset dots.h$ are $sigma$-algebras, then $inter.big_i scr(F)_i$ is an algebra.
-  + Give an example to show that $union.big_i scr(F)_i$ need not be $sigma$-algebra.
+  + Show that if $sF_1 subset sF_2 subset dots.h$ are $sigma$-algebras, then $inter.big_i sF_i$ is an algebra.
+  + Give an example to show that $union.big_i sF_i$ need not be $sigma$-algebra.
 ]
 #pf[
   + 设 $sF_i$ 是 $Omega$ 上的 $sigma$-代数，那么一定有 $diameter, Omega in sF_i$ 对每个 $i$ 成立。对 $forall A in inter.big_i sF_i$, 一定有 $A^c in inter.big_i sF_i$。对 $forall {A_n} in sF_i$，一定有 $union.big_n A_n in sF_i$。
@@ -45,7 +46,7 @@
 ]
 
 #ex[
-  A set $A subset { 1 , 2 , dots.h }$ is said to have asymptotic density $theta$ if $ lim_(n arrow.r oo) lr(|A inter { 1 , 2 , dots.h , n }|) / n = theta. $ Let $scr(A)$ be the collection of sets for which the asymptotic density exists. Is $scr(A)$ a $sigma$-algebra? an algebra?
+  A set $A subset { 1 , 2 , dots.h }$ is said to have asymptotic density $theta$ if $ lim_(n arrow.r oo) lr(|A inter { 1 , 2 , dots.h , n }|) / n = theta. $ Let $sA$ be the collection of sets for which the asymptotic density exists. Is $sA$ a $sigma$-algebra? an algebra?
 ]
 #pf[
   $sA$ 不是代数。令集合 $A$ 为 $N^+$ 中所有奇数的集合，那么显然有 $A$ 具有渐进密度 $1\/2$。再构造具有渐进密度为 $1\/2$ 的集合 $B$ 如下：$ B = {1, 4, 5, 7, 10, 12, 14, 16, 17, 19, 21, 23, ...}, $ $B$ 在所有形如 $(2^(2k-1), 2^(2k)]$ 的区间上取所有奇数，在所有形如 $(2^(2k), 2^(2k+1)]$ 的区间上取所有偶数。这时可以证明 $A union B$ 不具有渐进密度，因为在前 $2^(2k-1)$ 个数上的密度小于 $3\/4$，而在前 $2^(2k)$ 个数上的密度大于 $3\/4$。

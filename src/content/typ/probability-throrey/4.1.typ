@@ -3,7 +3,7 @@
 #show: post.with(
   title: "概率论 4.1 条件期望",
   pub_date: (2025, 6, 21),
-  upd_date: (2025, 6, 21),
+  upd_date: (2025, 6, 22),
   pub_time: (22, 48, 23),
   tags: ("概率论",),
   description: "",

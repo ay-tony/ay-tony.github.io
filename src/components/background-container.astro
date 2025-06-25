@@ -4,7 +4,12 @@ import BackgroundImage from "./imgs/bg.png";
 ---
 
 <div id="background-container">
-    <Image id="background-image" src={BackgroundImage} alt="背景图片" />
+    <Image
+        id="background-image"
+        src={BackgroundImage}
+        alt="背景图片"
+        loading="eager"
+    />
 </div>
 
 <style>

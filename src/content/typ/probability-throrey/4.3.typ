@@ -3,7 +3,7 @@
 #show: post.with(
   title: "概率论 4.3 例子",
   pub_date: (2025, 6, 24),
-  upd_date: (2025, 6, 24),
+  upd_date: (2025, 6, 26),
   pub_time: (10, 2, 36),
   tags: ("概率论",),
   description: "",

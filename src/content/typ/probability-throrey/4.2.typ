@@ -1,7 +1,7 @@
 #import "../../templates/post.typ": *
 
 #show: post.with(
-  title: "概率论 4.2 鞅、几乎必然收敛",
+  title: "概率论 4.2. 鞅、几乎必然收敛",
   pub_date: (2025, 6, 22),
   upd_date: (2025, 6, 24),
   pub_time: (9, 21, 17),

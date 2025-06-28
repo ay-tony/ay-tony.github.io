@@ -3,7 +3,7 @@
 #show: post.with(
   title: "使用 Cloudflare 自定义邮箱域名和地址",
   pub_date: (2025, 6, 27),
-  upd_date: (2025, 6, 27),
+  upd_date: (2025, 6, 28),
   pub_time: (13, 46, 5),
   tags: ("杂项",),
   description: "",
@@ -25,5 +25,5 @@
 
 = 其他
 
-国际邮箱肯定可以，实测 qq 邮箱可以，`buaa.edu.cn` 好像不可以，接收不到 Cloudflare 的验证邮件。
+国际邮箱肯定可以，实测 qq 邮箱可以，校园邮箱也可以，注意关闭垃圾邮件识别，有可能把 Cloudflare 的验证邮件自动拦截掉。
 

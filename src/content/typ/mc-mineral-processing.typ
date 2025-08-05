@@ -69,7 +69,7 @@
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Saltpeter|Realgar|Cobalt|Gold|Glauconite|Gypsum|Uranium|Titanium|Oriharukon|Tungstate|Magnetite|Lithium|Scheelite|VanadiumMagnetite|Graphite|Mica|Calcite|Redstone|Arsenic|Antimony)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(RoastedIron|Desh|Lepidolite|Zeolite|Kyanite|Draconium|BrownLimonite|YellowLimonite|Diatomite|Asbestos|Neodymium|Cryolite|Grossular|Spessartine|Tetrahedrite|Stibnite|Ferberite)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Loellingite|Roquesite|Bornite|Wittichenite|Djurleite|Huebnerite|RedDescloizite|Pentlandite|Arsenopyrite|RoastedNickel|Cobaltite|CallistoIce|Ledox|Alduorite|Rubracium|Orichalcum)$
-^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Chrome|Naquadah|NaquadahEnriched|InfusedGold|Ceruclase|Mytryl|Quantium|Vulcanite|DeepIron|Bismuthinite|Electrotine|GreenFuchsite|Magnesite|RedFuchsite|Tungsten|Rutile)$
+^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Chrome|Naquadah|NaquadahEnriched|InfusedGold|Ceruclase|Mytryl|Quantium|Vulcanite|Bismuthinite|Electrotine|GreenFuchsite|Magnesite|RedFuchsite|Tungsten|Rutile)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Plutonium241|Niobium|Pitchblende|CassiteriteSand|FullersEarth|GlauconiteSand|BasalticMineralSand|GraniticMineralSand|GarnetSand|Kaolinite|Bentonite|RockSalt|Salt|Silicon|Gallium)$
 ^(ore|rawOre|oreRaw|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Yttrium|Uranium235|Neutronium|Adamantium|Naquadria|ShadowIron|BlackPlutonium|Garnierite|HeeEndium|Soapstone|Irarsite|Osmium|AgarditeNd|Florencite|GadoliniteCe)$
 
@@ -83,7 +83,7 @@
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Pollucite|Uraninite|Pyrolusite|OrangeDescloizite|Pentlandite|Palladium|Chalcopyrite|Pyrochlore|Sphalerite)$
 
 粉粉离
-^(ore|rawOre|oreRaw|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(RareEarthIII|RareEarthII|RareEarthI|Xenotime)$
+^(ore|rawOre|oreRaw|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(RareEarthIII|RareEarthII|RareEarthI|Xenotime|DeepIron)$
 
 粉化粉离
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Nickel|Mithril)$
@@ -186,7 +186,6 @@ MWMC = {
   "Mytryl",
   "Quantium",
   "Vulcanite",
-  "Deep Iron",
   "Bismuthinite",
   "Bastnasite",
   "Electrotine",
@@ -270,7 +269,8 @@ MWMC_salt = {
 }
 
 MMC = {
-  -- "Rare Earth (III)",
+  "Deep Iron",
+  "Rare Earth (III)",
   "Rare Earth (II)",
   "Rare Earth (I)"
 }

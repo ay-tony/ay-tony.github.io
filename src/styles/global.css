@@ -96,4 +96,5 @@ body {
     border-radius: 10px;
     font-family: "CascadiaCodeNF", monospace;
     font-size: 0.9rem;
+    overflow: auto;
 }

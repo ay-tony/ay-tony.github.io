@@ -30,8 +30,8 @@
 
 + 将待处理图片文件 `example.txt` 保存到 OC 中，并与 `printer.lua`
   放在同一目录下。此处 `example.txt` 名称可以任意选取。
-+ 运行命令 `printer example.txt 'example'` 命令，其中 `example.txt`
-  替换为待处理的图片文件名，`'example'` 替换为希望打印出的像素画的物品名称。
++ 运行命令 `printer /home/example.txt 'example'` 命令，其中 `/home/example.txt`
+  替换为待处理的图片绝对路径，`'example'` 替换为希望打印出的像素画的物品名称。
 + 等待 3D 打印机逐个打印出像素画。像素画的顺序是从上到下、从左到右。
 
 = 打印效果
@@ -47,6 +47,7 @@
 + 在安装因特网卡的情况下，OC 中 `wget https://solitairemiya.cn/oc-pixelart/gtnh.txt` 即可下载网络上的文件。
 + 打印出的像素画需要自己按顺序手拼，如果像素画很大会比较牢。
 + 打印出的像素画要及时利用管道抽取，否则可能会漏打，少打。
++ 打印像素画命令中文件一定要用绝对路径，不支持相对路径。
 
 = 现有资源
 

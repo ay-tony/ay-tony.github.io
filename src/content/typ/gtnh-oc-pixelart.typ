@@ -54,6 +54,10 @@
 
 #figure(image("img/2025-08-14-20-50-00.png"), caption: [miyabi (480x256) #link("/oc-pixelart/miyabi.txt")[链接]])
 
+#figure(image("img/2025-08-15-15-44-00.png"), caption: [enigma (480x256) #link("/oc-pixelart/enigma.txt")[链接]])
+
+#figure(image("img/2025-08-15-15-43-00.png"), caption: [touhu-project (480x256) #link("/oc-pixelart/touhu-project.txt")[链接]])
+
 = OC 代码
 
 和原版代码相比，添加了打印计数并输出的功能，同时在相邻两次打印之间加入 5

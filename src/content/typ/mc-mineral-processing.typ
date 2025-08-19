@@ -62,7 +62,7 @@
 
 需要注意保持所有三级子网缓存有空余空间，否则流水线产生的多余矿物会直接进入主网，可能堵塞主网中的随机存储模块。
 
-另附一级子网到各个二级子网的矿典分类脚本。
+另附一级子网到各个二级子网的矿典分类脚本供参考。
 
 ```
 粉洗粉离
@@ -70,15 +70,16 @@
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Saltpeter|Realgar|Cobalt|Gold|Glauconite|Gypsum|Uranium|Titanium|Oriharukon|Tungstate|Magnetite|Lithium|Scheelite|VanadiumMagnetite|Graphite|Mica|Calcite|Redstone|Arsenic|Antimony)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(RoastedIron|Desh|Lepidolite|Zeolite|Kyanite|Draconium|BrownLimonite|YellowLimonite|Diatomite|Asbestos|Neodymium|Cryolite|Grossular|Spessartine|Tetrahedrite|Stibnite|Ferberite)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Loellingite|Roquesite|Bornite|Wittichenite|Djurleite|Huebnerite|RedDescloizite|Pentlandite|Arsenopyrite|RoastedNickel|Cobaltite|CallistoIce|Ledox|Alduorite|Rubracium|Orichalcum)$
-^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Chrome|Naquadah|NaquadahEnriched|InfusedGold|Ceruclase|Mytryl|Quantium|Vulcanite|Bismuthinite|Electrotine|GreenFuchsite|Magnesite|RedFuchsite|Tungsten|Rutile)$
+^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Chrome|Naquadah|NaquadahEnriched|InfusedGold|Ceruclase|Mytryl|Quantium|Vulcanite|Bismuthinite|Electrotine|GreenFuchsite|Magnesite|RedFuchsite|Tungsten|Rutile|Vanadium|Talc)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Plutonium241|Niobium|Pitchblende|CassiteriteSand|FullersEarth|GlauconiteSand|BasalticMineralSand|GraniticMineralSand|GarnetSand|Kaolinite|Bentonite|RockSalt|Salt|Silicon|Gallium)$
-^(ore|rawOre|oreRaw|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Yttrium|Uranium235|Neutronium|Adamantium|Naquadria|ShadowIron|BlackPlutonium|Garnierite|HeeEndium|Soapstone|Irarsite|Osmium|AgarditeNd|Florencite|GadoliniteCe)$
+^(ore|rawOre|oreRaw|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Yttrium|Uranium235|Neutronium|Adamantium|Naquadria|ShadowIron|BlackPlutonium|Garnierite|HeeEndium|Soapstone|Irarsite|Osmium|AgarditeNd|Florencite|GadoliniteCe|Lutetium|Oilsands)$
+^(ore|rawOre|oreRaw|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Almandine|BandedIron|Pyrope)$
 
 粉洗筛
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Cinnabar|Firestone|CertusQuartz|NetherQuartz|Quartzite|Emerald|Diamond|Sapphire|GreenSapphire|Olivine|Topaz|Amethyst|Opal|Jasper|BlueTopaz|Amber|Sodalite|Lapis|GarnetRed|Apatite)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Jade|Lignite|InfusedAir|InfusedFire|InfusedEarth|InfusedWater|InfusedEntropy|InfusedOrder|Malachite|Spodumene|Ruby|Thorium|Coal|Lazurite|Cassiterite|Thorianite|Fayalite)$
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Forsterite|Hedenbergite|Tanzanite|GarnetYellow|FoolsRuby|Jasper|Bismutite|Chromo-Alumino-Povondraite|Fluor-Buergerite|Vanadio-Oxy-Dravite|Olenite|RedZircon|Vinteum|Prasiolite|Fluorspar)$
-^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(TricalciumPhosphate|Tiberium|BArTiMaEuSNeK)$
+^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(TricalciumPhosphate|Tiberium|BArTiMaEuSNeK|NetherStar)$
 
 粉洗热粉
 ^(ore|rawOre|(crushed(Purified|Centrifuged)?)|dust(Pure|Impure))(Pollucite|Uraninite|Pyrolusite|OrangeDescloizite|Pentlandite|Palladium|Chalcopyrite|Pyrochlore|Sphalerite)$
@@ -97,6 +98,8 @@
 ```
 
 = 附录
+
+以下为 OC 矿物处理的代码，仅供参考，不建议直接复制使用。
 
 ```lua
 component = require("component")

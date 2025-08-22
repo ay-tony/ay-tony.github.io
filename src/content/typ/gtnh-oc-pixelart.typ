@@ -78,7 +78,7 @@ local args = shell.parse(...)
 file = fs.open(args[1], "rb")
 if not file then
   io.write("No file named " .. args[1])
-  exit(1)
+  os.exit(1)
 end
 
 count = 1

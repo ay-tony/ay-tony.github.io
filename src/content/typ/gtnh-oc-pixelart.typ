@@ -62,7 +62,7 @@
 = OC 代码
 
 和原版代码相比，添加了打印计数并输出的功能，同时在相邻两次打印之间加入 5
-秒延迟，让管道能及时将打印出的图片抽走。
+秒延迟，让管道能及时将打印出的图片抽走。在打开不存在的文件时，会报错并自动退出。
 
 ```lua
 local component = require("component")
@@ -78,6 +78,7 @@ local args = shell.parse(...)
 file = fs.open(args[1], "rb")
 if not file then
   io.write("No file named " .. args[1])
+  exit(1)
 end
 
 count = 1

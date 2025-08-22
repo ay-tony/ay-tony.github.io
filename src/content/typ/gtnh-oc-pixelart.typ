@@ -62,7 +62,7 @@
 = OC 代码
 
 和原版代码相比，添加了打印计数并输出的功能，同时在相邻两次打印之间加入 5
-秒延迟，让管道能及时将打印出的图片抽走。在打开不存在的文件时，会报错并自动退出。
+秒延迟，让管道能及时将打印出的图片抽走。在打开不存在的文件时，会报错并自动退出。同时将打印出的物品进行编号，避免混淆。
 
 ```lua
 local component = require("component")
@@ -85,7 +85,7 @@ count = 1
 n = file:read(1)
 while n do
   printer.reset()
-  printer.setLabel(args[2])
+  printer.setLabel(args[2] .. count)
   printer.setTooltip(args[3])
   printer.setLightLevel(15)
   printer.setRedstoneEmitter(false)

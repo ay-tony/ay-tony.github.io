@@ -9,6 +9,22 @@
   #html.elem("p", attrs: (style: "text-indent: 0; margin-top: 0;"))[*练习*]
   #par(it)
 ]
+
+#let de(title: none, it) = html.elem(
+  "div",
+  attrs: (
+    style: "margin: 1rem 0; background-color: color-mix(in srgb, var(--bg1-color), var(--bg2-color)); padding: 10px 20px; border-radius: 10px",
+  ),
+)[
+  #html.elem("p", attrs: (style: "text-indent: 0; margin-top: 0;"))[
+    *定义*
+    #if title != none [
+      （#title）
+    ]
+  ]
+  #par(it)
+]
+
 #let pf(it) = html.elem("div", attrs: (style: "margin: 1rem 0; margin-top: 0;"))[
   #html.elem("p", attrs: (style: "text-indent: 0;"))[*证明*]
   #par(emph(it))
@@ -22,10 +38,15 @@
 #let sF = $scr("F")$
 #let sG = $scr("G")$
 #let sH = $scr("H")$
+#let sM = $scr("M")$
 #let sN = $scr("N")$
+#let sP = $scr("P")$
 #let sR = $scr("R")$
 #let sS = $scr("S")$
 #let sL = $scr("L")$
+#let sX = $scr("X")$
+#let sY = $scr("Y")$
+#let sZ = $scr("Z")$
 #let sl = $scr("l")$
 #let vI = $vb(I)$
 #let vx = $vb(x)$
@@ -33,10 +54,12 @@
 #let vz = $vb(z)$
 #let uE = $upright(E)$
 #let uM = $upright(M)$
+#let ue = $upright(e)$
 #let cC = $cate(C)$
 #let cL = $cate(L)$
 #let LHS = math.class("normal", "LHS")
 #let RHS = math.class("normal", "RHS")
+#let argmin = math.class("large", "argmin")
 #let var = math.class("unary", "var")
 #let Ob = math.class("unary", "Ob")
 #let Mor = math.class("unary", "Mor")

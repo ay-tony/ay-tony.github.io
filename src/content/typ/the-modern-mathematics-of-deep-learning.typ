@@ -148,7 +148,7 @@ RR^(P(N))$，并设激活函数 $rho.alt$ 连续即可.
 这时实际的假设集为 $sF_(a, sgn)$，但是一般使用对应回归任务的假设集 $sF_a$
 进行学习，并找到一个解 $hat(f)^"surr"_s in sF_a$ 来最小化 $ 1 / m sum_(i=1)^m sL^"surr" (f, z^((i))), $ 其中 $sL^"surr": sM(sX, RR) times sZ -> RR$ 是替代损失函数（Surrogate
 Loss），这个函数的选取要保证 $hat(f)^"surr"_s$ 满足 $ sgn(hat(f)^"surr"_s) in
-argmin_(f in sF_(a,sgn))hat(sR)_s (f). $ 一个常见的选取方法是 Logistic 损失 $ sL^"surr"(f,z) = log(1 + ue^(-y f(x))). $ 这个损失函数也可以看作标签 $y$
+argmin_(f in sF_(a,sgn))hat(sR)_s (f). $ 一个常见的选取方法是 Logistic 损失 $ sL^"surr" (f,z) = log(1 + ue^(-y f(x))). $ 这个损失函数也可以看作标签 $y$
 和模型输出 $f(x)$ 的交叉熵.
 
 在很多学习任务中通常还会在最终的损失中加入正则项，比如加入参数范数带来的惩罚，如
@@ -160,5 +160,26 @@ $ sA(s) in argmin_(theta in RR^(P(N))) hat(sR)_s (Phi_a (dot, theta)) + alpha
 == 样本
 
 在样本的选取上，我们假设 $z^((1)), z^((2)), ..., z^((m))$ 和隐藏数据（unseen
-data） $z$ 都取样于独立同分布的随机变量 $Z^((1)), Z^((2)), ..., Z^((m)), Z$.
+data） $z$ 都取样于独立同分布的随机变量 $Z^((1)), Z^((2)), ..., Z^((m)), Z$. 记 $PP_Z$ 是随机变量 $Z$ 在 $sZ$ 上的像测度.
 
+#de(title: "风险（Risk）")[
+  对于映射 $f in sM(sX, sY)$，定义其风险为 $ sR(f) := EE[sL(f, Z)] = integral_sZ
+  sL(f, z) dd(PP_Z (z)). $ 定义 $S := {Z^((i))}_(i=1)^m$，那么模型 $f_S = sA(S)$
+  的风险就是 $ sR(f_S) = EE[sL(f_S, Z)|S]. $
+]
+
+那么，对于二分类问题而言，我们就得到 $ sR(f) = EE[bb(1)_((-oo, 0))(Y f(X))] = PP[f(X) != Y]. $
+
+#de(title: "贝叶斯最优函数")[
+  映射 $f^* in sM(sX, sY)$ 能达到的最小风险称为贝叶斯风险，也即 $ sR^* := inf_(f
+  in sM(sX, sY)) sR(f). $ 此时取到的映射 $f^*$ 称为贝叶斯最优函数.
+]
+
+#tho(title: "回归和分类任务的风险分解")[
+  对于 $VV[Y]<oo$ 的回归任务，风险可以分解为 $ sR(f) = EE[(f(X) - EE[Y|X]^2)] +
+  sR^*, quad f in sM(sX, sY). $ 此时贝叶斯最优函数为 $f^* (x) = EE[Y|X=x]$.
+
+  对于分类任务，风险可以分解为 $ sR(f) = EE[abs(EE[Y|X])|bb(1)_((-oo,0))(EE[Y|X]f(X))] + sR^*, quad f in
+  sM(sX, sY). $ 对应的贝叶斯最优函数，或者贝叶斯分类器为 $f^* (x) =
+  sgn(EE[Y|X=x])$.
+]

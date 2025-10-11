@@ -10,6 +10,21 @@
   #par(it)
 ]
 
+#let tho(title: none, it) = html.elem(
+  "div",
+  attrs: (
+    style: "margin: 1rem 0; background-color: color-mix(in srgb, var(--bg1-color), var(--bg2-color)); padding: 10px 20px; border-radius: 10px",
+  ),
+)[
+  #html.elem("p", attrs: (style: "text-indent: 0; margin-top: 0;"))[
+    *定理*
+    #if title != none [
+      （#title）
+    ]
+  ]
+  #par(it)
+]
+
 #let de(title: none, it) = html.elem(
   "div",
   attrs: (

@@ -16,4 +16,4 @@
 + 下载 `Construct Technological Innovation 0.4b.zip`，在 PCL 中选择 `启动 > 版本选择 >
   导入整合包`，然后选择前述文件，等待导入完成。
 + 启动游戏，可能需要视情况安装 Java。参考 Java 25 下载地址为 https://jdk.java.net/java-se-ri/25 。
-+ 进入后在 `多人游戏 > 添加服务器` 中添加地址 `frp-rug.com:24192` 即可。推荐提前调整相关键位绑定。
++ 进入后在 `多人游戏 > 添加服务器` 中添加地址 `xbp.mc.aytony.cn` 即可。推荐提前调整相关键位绑定。

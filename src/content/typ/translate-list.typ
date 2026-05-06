@@ -3,7 +3,7 @@
 #show: post.with(
   title: "翻译列表",
   pub_date: (2026, 4, 23),
-  upd_date: (2026, 4, 23),
+  upd_date: (2026, 5, 7),
   pub_time: (22, 41, 35),
   tags: ("杂项",),
   description: "",
@@ -27,4 +27,4 @@
 
 / #link(
     "/ai-translation/isolated-singular-points-on-complete-intersections.pdf",
-  )[introduction-to-differential-galois-theory.pdf]:
+  )[isolated-singular-points-on-complete-intersections]:

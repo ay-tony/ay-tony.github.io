@@ -23,4 +23,4 @@
 
 / #link("/ai-translation/théorie-des-opérations-linéaires.pdf")[théorie-des-opérations-linéaires]:
 
-/ #link("/ai-translation/introduction-to-differential-galois-theory")[introduction-to-differential-galois-theory]:
+/ #link("/ai-translation/introduction-to-differential-galois-theory.pdf")[introduction-to-differential-galois-theory]:

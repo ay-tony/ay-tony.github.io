@@ -24,3 +24,7 @@
 / #link("/ai-translation/théorie-des-opérations-linéaires.pdf")[théorie-des-opérations-linéaires]:
 
 / #link("/ai-translation/introduction-to-differential-galois-theory.pdf")[introduction-to-differential-galois-theory]:
+
+/ #link(
+    "/ai-translation/isolated-singular-points-on-complete-intersections.pdf",
+  )[introduction-to-differential-galois-theory.pdf]:

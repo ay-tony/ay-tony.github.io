@@ -9,6 +9,8 @@
   description: "",
 )
 
+特别说明：关于 GTM 翻译专栏见 #link("https://hangjuan.cn/")[航卷]
+
 列出一些用 AI 翻译的文章，部分可能没翻译完，未来可能会找时间继续翻译吧，目前工作只有这么多。
 
 / #link("/ai-translation/basic-stochastic-process.pdf")[basic-stochastic-process]:
